@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 
 
@@ -8,6 +8,8 @@ import { NavbarComponent } from '../navbar/navbar.component';
   templateUrl: './vitamina-c.component.html',
   styleUrl: './vitamina-c.component.css'
 })
-export class VitaminaCComponent {
-
+export class VitaminaCComponent implements OnInit {
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }

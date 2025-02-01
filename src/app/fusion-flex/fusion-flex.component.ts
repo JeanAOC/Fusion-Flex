@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 
 
@@ -8,6 +8,8 @@ import { NavbarComponent } from '../navbar/navbar.component';
   templateUrl: './fusion-flex.component.html',
   styleUrl: './fusion-flex.component.css'
 })
-export class FusionFlexComponent {
-
+export class FusionFlexComponent implements OnInit {
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }
