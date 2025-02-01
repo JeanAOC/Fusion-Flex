@@ -1,28 +1,47 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
-
 header {
     position: relative;
-    height: 100vh;
-    /*background: url('assets/images/fusion-flex-header.jpg') no-repeat center center/cover;*/
+    background: url('https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2023/10/06/mujer-activa-haciendo-ejercicios-estiramiento-cuerpo-al-aire-libre.jpeg') no-repeat center center/cover;
     color: white;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+header h1, header .subtitle {
+    position: relative;
+    z-index: 2;
+}
 header h1 {
     font-size: 3rem;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+    margin: 0;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
 nav {
@@ -47,14 +66,57 @@ nav a {
     padding: 20px 0;
 }
 
-section {
-    margin-bottom: 40px;
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-h2 {
+.grid-beneficios, .grid-ingredientes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.beneficio, .ingrediente {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.beneficio h3, .ingrediente h3 {
     color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 10px;
+}
+
+.btn {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: #45a049;
+}
+
+.testimonio {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.testimonio .autor {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    color: #555;
 }
 
 footer {

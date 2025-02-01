@@ -1,19 +1,18 @@
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
 
 header {
-    position: relative;
-    height: 100vh;
     background: url('assets/images/trotar.jpg') no-repeat center center/cover;
     color: white;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -21,9 +20,12 @@ header {
 
 header h1 {
     font-size: 3rem;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+    margin: 0;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
 nav {
@@ -45,17 +47,60 @@ nav a {
 .container {
     width: 80%;
     margin: auto;
-    overflow: hidden;
     padding: 20px 0;
 }
 
-section {
-    margin-bottom: 40px;
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-h2 {
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 10px;
+.grid-beneficios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.beneficio {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.beneficio h3 {
+    color: #4CAF50;
+}
+
+.btn {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: #45a049;
+}
+
+.testimonio {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.testimonio .autor {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    color: #555;
 }
 
 footer {
