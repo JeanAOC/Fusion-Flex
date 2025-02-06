@@ -7,60 +7,96 @@
 </head>
 <body>
     <app-navbar></app-navbar>
-    <header>
-        <h1>Bio C: Protección al más alto nivel con Vitamina C</h1>
-        <p class="subtitle">Tu aliado para una vida saludable y llena de energía.</p>
-    </header>
+        <!-- Carrusel de Swiper -->
+    <swiper-container
+    navigation="true"
+    pagination="true"
+    loop="true"
+    autoplay="true"
+    space-between="30"
+    centered-slides="true"
+    style="height: 90vh;"
+    >
+    <!-- Slide 1 -->
+    <swiper-slide>
+        <img src="https://via.placeholder.com/1200x400/4CAF50/FFFFFF?text=Bio+C+1" alt="Bio C 1">
+        <div class="slide-content">
+            <h1>Bio C: Protección al más alto nivel con Vitamina C</h1>
+            <p class="subtitle">Tu aliado para una vida saludable y llena de energía.</p>
+        </div>
+    </swiper-slide>
+    <!-- Slide 2 -->
+    <swiper-slide>
+        <img src="https://via.placeholder.com/1200x400/2196F3/FFFFFF?text=Bio+C+2" alt="Bio C 2">
+        <div class="slide-content">
+            <h1>Combate Alergias y Reduce el Estrés</h1>
+            <p class="subtitle">Protege tu cuerpo y mejora tu bienestar.</p>
+        </div>
+    </swiper-slide>
+    <!-- Slide 3 -->
+    <swiper-slide>
+        <img src="https://via.placeholder.com/1200x400/FFC107/FFFFFF?text=Bio+C+3" alt="Bio C 3">
+        <div class="slide-content">
+            <h1>Salud Cardiovascular y Desintoxicación</h1>
+            <p class="subtitle">Cuida tu corazón y elimina toxinas.</p>
+        </div>
+    </swiper-slide>
+    </swiper-container>
+
+    <!-- Resto del contenido de la página -->
     <div class="container">
-        <section id="beneficios" class="card">
-            <h2>Beneficios de Bio C</h2>
-            <div class="grid-beneficios">
-                <div class="beneficio">
-                    <h3>🛡️ Protección Contra el Cáncer</h3>
-                    <p>La vitamina C en altas concentraciones ayuda a eliminar células cancerígenas.</p>
-                </div>
-                <div class="beneficio">
-                    <h3>🌿 Combate Alergias</h3>
-                    <p>Reduce los niveles de histamina, aliviando síntomas de alergias.</p>
-                </div>
-                <div class="beneficio">
-                    <h3>💪 Reduce el Estrés</h3>
-                    <p>Protege las glándulas suprarrenales, previniendo el agotamiento por estrés.</p>
-                </div>
-                <div class="beneficio">
-                    <h3>❤️ Salud Cardiovascular</h3>
-                    <p>Mejora la producción de prostaglandinas, esenciales para el corazón.</p>
-                </div>
-                <div class="beneficio">
-                    <h3>🌍 Elimina Toxinas</h3>
-                    <p>Destruye metales pesados y carcinógenos, protegiendo tu cuerpo.</p>
-                </div>
+    <section id="beneficios" class="card">
+        <h2>Beneficios de Bio C</h2>
+        <div class="grid-beneficios">
+            <div class="beneficio">
+                <h3>🛡️ Protección Contra el Cáncer</h3>
+                <p>La vitamina C en altas concentraciones ayuda a eliminar células cancerígenas.</p>
             </div>
-        </section>
-    
-        <section id="como-funciona" class="card">
-            <h2>¿Cómo Funciona Bio C?</h2>
-            <p>
-                Bio C utiliza vitamina C en concentraciones farmacológicas, administrada de manera intravenosa, para ofrecer beneficios únicos. Actúa como un antioxidante poderoso, eliminando radicales libres y protegiendo tus células. Además, ayuda a producir colágeno, fortalecer el sistema inmunológico y desintoxicar el cuerpo.
-            </p>
-            <button class="btn">Conoce Más</button>
-        </section>
-    
-        <section id="testimonios" class="card">
-            <h2>Lo que Dicen Nuestros Pacientes</h2>
-            <div class="testimonio">
-                <p>“Bio C ha cambiado mi vida. Me siento con más energía y mi salud ha mejorado notablemente.”</p>
-                <span class="autor">- Ana L.</span>
+            <div class="beneficio">
+                <h3>🌿 Combate Alergias</h3>
+                <p>Reduce los niveles de histamina, aliviando síntomas de alergias.</p>
             </div>
-            <div class="testimonio">
-                <p>“Después de usar Bio C, mis alergias han disminuido y mi piel luce más joven.”</p>
-                <span class="autor">- Pedro M.</span>
+            <div class="beneficio">
+                <h3>💪 Reduce el Estrés</h3>
+                <p>Protege las glándulas suprarrenales, previniendo el agotamiento por estrés.</p>
             </div>
-        </section>
+            <div class="beneficio">
+                <h3>❤️ Salud Cardiovascular</h3>
+                <p>Mejora la producción de prostaglandinas, esenciales para el corazón.</p>
+            </div>
+            <div class="beneficio">
+                <h3>🌍 Elimina Toxinas</h3>
+                <p>Destruye metales pesados y carcinógenos, protegiendo tu cuerpo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-funciona" class="card">
+        <h2>¿Cómo Funciona Bio C?</h2>
+        <p>
+            Bio C utiliza vitamina C en concentraciones farmacológicas, administrada de manera intravenosa, para ofrecer beneficios únicos. Actúa como un antioxidante poderoso, eliminando radicales libres y protegiendo tus células. Además, ayuda a producir colágeno, fortalecer el sistema inmunológico y desintoxicar el cuerpo.
+        </p>
+        <p>
+            ¿Deseas asesoría personalizada?
+        </p>
+        <button class="btn">Conoce Más</button>
+    </section>
+
+    <section id="testimonios" class="card">
+        <h2>Lo que Dicen Nuestros Pacientes</h2>
+        <div class="testimonio">
+            <p>“Bio C ha cambiado mi vida. Me siento con más energía y mi salud ha mejorado notablemente.”</p>
+            <span class="autor">- Ana L.</span>
+        </div>
+        <div class="testimonio">
+            <p>“Después de usar Bio C, mis alergias han disminuido y mi piel luce más joven.”</p>
+            <span class="autor">- Pedro M.</span>
+        </div>
+    </section>
     </div>
-    
+
     <footer>
-        <p>&copy; 2023 Bio C. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Bio C. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
