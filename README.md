@@ -57,3 +57,22 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+
+//bio C con acido ascorbico// asi se va a bucar en google
+
+en la barra verde de arriba cuando seleccionamos unas opciones hacer que quese subrayado o de pinte de otro tono para saber en que pagina estamos.
+
+agregar las imagenes del producto, realizar el carrousel
+
+en el inicio agregar lema como: mantengase fuerte, vital y libre de enfermedades!!
+
+agregar busbuja flotante de whatssapp y que el mensaje que salga diga algo como: para una atención mas pronta y personalizada llamar a este mismo numero y lo atenderemos lo mas pronto posible
+
+en la panatalla de bio C: en la seccion de ver mas información tambien hay que agregar el acceso directo a whatsapp con el icono del mismo.
+agregar que elimina el colesterol malo y alivia enfermedades cronicas.
+
+agregar como información extra en las dos pantallas: dirigido para jovenes y adultos; tambien para personas que realizan deporte extremo y recomendado para personas aspirantes a bomberos, policias y a la milicia.
+
+en letras pequeñas se agrega esto: estos medicamentos se agregan unicamente a adutos y jovenes
