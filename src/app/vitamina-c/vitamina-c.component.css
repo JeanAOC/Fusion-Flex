@@ -7,41 +7,71 @@ body {
     color: #333;
 }
 
-header {
-    background: url('assets/images/trotar.jpg') no-repeat center center/cover;
-    color: white;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+/* Estilos para el carrusel */
+swiper-container {
+    width: 100%;
+    height: 90vh; /* Ajusta la altura para que ocupe todo el espacio del header */
+    position: relative;
 }
 
-header h1 {
+swiper-slide {
+    position: relative;
+}
+
+swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+}
+
+/* Estilos para el contenido del slide */
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2; /* Asegúrate de que esté por encima de la imagen */
+}
+
+.slide-content h1 {
     font-size: 3rem;
     margin: 0;
 }
 
-header .subtitle {
+.slide-content .subtitle {
     font-size: 1.2rem;
     margin-top: 10px;
 }
 
-nav {
-    background: #4CAF50;
-    padding: 10px;
-    text-align: center;
-    position: sticky;
+/* Capa oscura semitransparente para mejorar la legibilidad del texto */
+swiper-slide::after {
+    content: '';
+    position: absolute;
     top: 0;
-    z-index: 1000;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según sea necesario */
+    z-index: 1;
 }
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+/* Estilos para los botones de navegación */
+swiper-container::part(button-prev),
+swiper-container::part(button-next) {
+    color: white; /* Cambia el color de las flechas */
+    z-index: 2; /* Asegúrate de que estén por encima de la capa oscura */
+}
+
+/* Estilos para los indicadores de paginación */
+swiper-container::part(pagination) {
+    bottom: 20px; /* Posición de los círculos */
+    z-index: 2; /* Asegúrate de que estén por encima de la capa oscura */
+}
+
+swiper-container::part(bullet-active) {
+    background-color: #4CAF50; /* Color del círculo activo */
 }
 
 .container {

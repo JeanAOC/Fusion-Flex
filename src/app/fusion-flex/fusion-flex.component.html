@@ -7,10 +7,42 @@
 </head>
 <body>
     <app-navbar></app-navbar>
-    <header>
-        <h1>Fusion-Flex: Salud Articular en Cada Dosis</h1>
-        <p class="subtitle">Movimiento sin límites, vida sin dolor.</p>
-    </header>
+    <!-- Carrusel de Swiper -->
+    <swiper-container
+    navigation="true"
+    pagination="true"
+    loop="true"
+    rewind="true"
+    autoplay="true"
+    space-between="30"
+    centered-slides="true"
+    style="height: 90vh;"
+    >
+    <!-- Slide 1 -->
+    <swiper-slide>
+        <img src="https://via.placeholder.com/1200x400/4CAF50/FFFFFF?text=Fusion-Flex+1" alt="Fusion-Flex 1">
+        <div class="slide-content">
+            <h1>Fusion-Flex: Salud Articular en Cada Dosis</h1>
+            <p class="subtitle">Movimiento sin límites, vida sin dolor.</p>
+        </div>
+    </swiper-slide>
+    <!-- Slide 2 -->
+    <swiper-slide>
+        <img src="https://via.placeholder.com/1200x400/2196F3/FFFFFF?text=Fusion-Flex+2" alt="Fusion-Flex 2">
+        <div class="slide-content">
+            <h1>Huesos Fuertes y Articulaciones Saludables</h1>
+            <p class="subtitle">Mejora tu movilidad y reduce el dolor.</p>
+        </div>
+    </swiper-slide>
+    <!-- Slide 3 -->
+    <swiper-slide>
+        <img src="https://via.placeholder.com/1200x400/FFC107/FFFFFF?text=Fusion-Flex+3" alt="Fusion-Flex 3">
+        <div class="slide-content">
+            <h1>Nutrición Completa para tus Articulaciones</h1>
+            <p class="subtitle">Glucosamina, condroitina y colágeno en cada dosis.</p>
+        </div>
+    </swiper-slide>
+    </swiper-container>
     <div class="container">
         <section id="beneficios" class="card">
             <h2>Beneficios de Fusion-Flex</h2>
@@ -72,9 +104,7 @@
             </div>
         </section>
     </div>
-    
-    <footer>
-        <p>&copy; 2023 Fusion-Flex. Todos los derechos reservados.</p>
-    </footer>
+    <app-whatsapp></app-whatsapp>
+    <app-footer></app-footer>
 </body>
 </html>
