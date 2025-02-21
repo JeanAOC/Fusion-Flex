@@ -1,5 +1,5 @@
 nav {
-    background: #4CAF50;
+    background: #4CAF50; /* Fondo verde */
     padding: 10px;
     text-align: center;
     position: sticky;
@@ -8,12 +8,27 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: white; /* Color del texto */
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px;
+    
+}
+
+/* Asegura que los enlaces visitados también sean blancos */
+nav a:visited {
+    color: white;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #f1f1f1; /* Cambia el color al pasar el mouse */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo al pasar el mouse */
+}
+
+nav a.active {
+    color: white; /* Color del texto cuando está activo */
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo más oscuro para resaltar */
+    border-bottom: 2px solid white; /* Subrayado blanco */
+    border-radius: 5px; /* Bordes redondeados */
 }
