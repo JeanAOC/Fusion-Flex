@@ -82,6 +82,7 @@ swiper-container::part(bullet-active) {
 
 .card {
     background: white;
+    border-left: 5px solid #4CAF50;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -163,7 +164,7 @@ footer {
 .info-item {
     text-align: center;
     padding: 15px;
-    background-color: white;
+    background-color: #f1f1f1;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
