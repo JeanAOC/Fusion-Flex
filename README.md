@@ -60,7 +60,7 @@ For more information on using the Angular CLI, including detailed command refere
 
 
 
-//bio C con acido ascorbico// asi se va a bucar en google
+//bio C con acido ascorbico y fusion fexng// asi se va a bucar en google
 
 en la barra verde de arriba cuando seleccionamos unas opciones hacer que quese subrayado o de pinte de otro tono para saber en que pagina estamos.
 
